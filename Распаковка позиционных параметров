@@ -1,0 +1,16 @@
+def print_params(a=1, b='dajhfa', c=True):
+    print(a, b, c)
+
+values_list = ['dkaadk', False, 10]
+values_list_2 = [1, 'fksol;kfspoksf']
+values_dict = {'a': True, 'b': 318318, 'c': '2131313'}
+values_dict_2 ={'b': 1, 'c': 2}
+values_list_3 = [5]
+
+
+print_params()
+print_params(*values_list)
+print_params(*values_list_2, 42)
+print_params(**values_dict)
+print_params(1, **values_dict_2)
+print_params(*values_list_3, **values_dict_2)
